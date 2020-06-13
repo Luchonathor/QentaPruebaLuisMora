@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prueba - Luis Miguel Mora Cadena</title>
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container-fluid">
+
+		<div class="card bg-light mb-3">
+			<div class="card-header"> <h4>Prueba Luis Miguel Mora</h4> </div>
+			<div class="card-body">
+				<h5 class="card-title">Jugadores</h5>
+				<p class="card-text">Lista de jugadores.</p>
+				<table class="table table-striped" id="table_jugadores">
+					<thead class="thead-dark">
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Jugador</th>
+							<th scope="col">Equipo</th>
+							<th scope="col">Posición</th>
+							<th scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="modal fade" id="viewPlayer" tabindex="-1" role="dialog" aria-labelledby="viewPlayerLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="viewPlayerLabel">Modal title</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary btn_savePlayer">Descargar Cambios</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="libs/jquery.js"></script>
+	<script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="libs/bootstrap/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="libs/bootstrap/js/dataTables.bootstrap4.min.js"></script>
+	<script type="text/javascript" src="libs/FileSaver/dist/FileSaver.min.js"></script>
+	<script type="text/javascript" src="libs/script.js"></script>
+</body>
+</html>
